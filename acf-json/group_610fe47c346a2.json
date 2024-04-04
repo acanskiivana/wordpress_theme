@@ -1,0 +1,67 @@
+{
+    "key": "group_610fe47c346a2",
+    "title": "Block - team section",
+    "fields": [
+        {
+            "key": "field_610fe4878877e",
+            "label": "Section header",
+            "name": "section_header",
+            "type": "wysiwyg",
+            "instructions": "Use h2 for the title",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "<h2>Title<\/h2>",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_610fe4a08877f",
+            "label": "Team member list",
+            "name": "team_member_list",
+            "type": "radio",
+            "instructions": "Choose how would you like to display team members.<br>\r\nYou can add and edit member <strong><a href=\"\/wp-admin\/admin.php?page=acf-options-team-member\" target=\"_blank\">here<\/a><\/strong>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "first_four": "Display first five team members",
+                "all": "Display all team members"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "",
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/team-section"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1648468800
+}

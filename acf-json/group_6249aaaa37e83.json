@@ -1,0 +1,69 @@
+{
+    "key": "group_6249aaaa37e83",
+    "title": "Block - subscribe",
+    "fields": [
+        {
+            "key": "field_6249abc4d600b",
+            "label": "Subscribe title",
+            "name": "subscribe_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6249abced600c",
+            "label": "Subscribe shortcode",
+            "name": "subscribe_form",
+            "type": "text",
+            "instructions": "Add shortcode of the form. \r\nYou can find shortcode <a href=\"\/wp-admin\/admin.php?page=wpcf7\" target=\"_blank\">here<\/a>.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/subscribe-form-section"
+            }
+        ],
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "theme-general-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1648995547
+}

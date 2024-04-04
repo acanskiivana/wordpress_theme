@@ -1,0 +1,26 @@
+.content-page {
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+    max-width: 870px;
+    @include respond-to('small') {
+        padding-top: 32rem;
+    }
+    h1, h2 {
+        margin-bottom: 2.4rem;
+    }
+
+    h2 {
+        @extend %size_h5;
+    }
+
+    h3 {
+        @extend %size_h6;
+        font-family: $main-font;
+        margin-bottom: 8px;
+    }
+
+    p, li {
+        @extend %base;
+        margin-bottom: 2.4rem;
+    }
+}

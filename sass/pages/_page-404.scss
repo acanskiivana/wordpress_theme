@@ -1,0 +1,16 @@
+.page-404 {
+    height: calc(100vh - 80px);
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 13rem;
+    padding-bottom: 8rem;
+    &__img {
+        @include push--auto;
+        max-width: 48rem;
+    }
+    p {
+        text-align: center;
+    }
+}

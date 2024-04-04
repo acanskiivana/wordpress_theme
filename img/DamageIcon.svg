@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="140px" height="140px" viewBox="0 0 140 140" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Damage Icon</title>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Product---Step-5-(all-products)" transform="translate(-267.000000, -2234.000000)">
+            <g id="Group-8-Copy-5" transform="translate(235.000000, 2202.000000)">
+                <g id="Damage-Icon" transform="translate(32.000000, 32.000000)">
+                    <rect id="Rectangle" stroke="#00CBD8" stroke-width="3.73333333" x="1.86666667" y="1.86666667" width="136.266667" height="136.266667"></rect>
+                    <rect id="Rectangle" stroke="#00C8D5" stroke-width="2.33333333" x="31.0333333" y="31.0333333" width="77.9333333" height="77.9333333"></rect>
+                    <polyline id="Path-36" stroke="#00CBD8" stroke-width="1.86666667" points="30.8 85.8666667 48.5333333 76.5333333 64.4 79.3333333 72.8 68.1333333 79.3333333 68.1333333 88.6666667 60.6666667 98.9333333 70"></polyline>
+                    <polyline id="Path-37" stroke="#00CBD8" stroke-width="1.86666667" points="42.9333333 79.3333333 57.8666667 85.8666667 61.6 94.2666667 72.8 94.2666667"></polyline>
+                    <polyline id="Path-38" stroke="#00CBD8" stroke-width="1.86666667" points="69.0666667 73.7333333 78.4 75.6 80.2666667 81.2"></polyline>
+                    <polyline id="Path-39" stroke="#00CBD8" stroke-width="1.86666667" points="53.2 77.4666667 57.8666667 70 65.3333333 67.2"></polyline>
+                    <line x1="91.4666667" y1="63.4666667" x2="100.8" y2="60.6666667" id="Path-40" stroke="#00CBD8" stroke-width="1.86666667"></line>
+                    <polyline id="Path-41" stroke="#00CBD8" stroke-width="1.86666667" points="30.8 62.5333333 38.2666667 72.8 44.8 70 50.4 60.6666667 60.6666667 56.9333333"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

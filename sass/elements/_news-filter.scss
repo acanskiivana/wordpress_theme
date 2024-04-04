@@ -1,0 +1,94 @@
+.news__filter {
+    margin-bottom: 7rem;
+    .search-wrap,
+    .select-wrap {
+        margin-bottom: 2rem;
+    }
+    .btn-wrap {
+        text-align: right;
+        .btn {
+            min-width: 120px;
+            @include respond-to('small') {
+                min-width: 170px;
+                margin-top: 0;
+                font-size: 24px;
+                line-height: 30px;
+                padding: 11px;
+            }
+        }
+    }
+    form {
+        @include respond-to('small') {
+            display: grid;
+            grid-template-columns: 6fr 6fr 1fr;
+            grid-column-gap: 2.4rem;
+            max-width: 1080px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        input[type="text"],
+        select {
+            font-size: 18px;
+            line-height: 28px;
+        }
+        input[type="text"] {
+            padding: 11px 35px 11px 15px;
+            @include respond-to('large') {
+                padding-right: 40px;
+                padding-left: 2rem;
+            }
+        }
+        .select2-selection__rendered {
+            @include respond-to('small') {
+                height: 52px;
+            }
+            @include respond-to('large') {
+                padding: 16px 2rem !important;
+            }
+        }
+    }
+    .search-wrap {
+        position: relative;
+        &.deletable {
+            .clear-btn {
+                display: block;
+            }
+            input[type="text"] {
+                padding-right: 18px;
+            }
+        }
+        .clear-btn {
+            display: none;
+            position: absolute;
+            top: 1px;
+            right: 1px;
+            width: 35px;
+            height: 100%;
+            z-index: 999999;
+            cursor: pointer;
+            @include respond-to('large') {
+                width: 40px;
+            }
+            &:after,
+            &:before {
+                content: '';
+                height: 2.5rem;
+                border-left: 2px solid $primary;
+                position: absolute;
+                right: 20px;
+                top: 18px;
+                @include respond-to('large') {
+                    right: 22px;
+                    height: 18px;
+                    top: 16px;
+                }
+            }
+            &:after {
+                transform: rotate(45deg);
+            }
+            &:before {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+}

@@ -1,0 +1,120 @@
+{
+    "key": "group_61103f89cd644",
+    "title": "Block - contact form",
+    "fields": [
+        {
+            "key": "field_61103f939c9de",
+            "label": "Form title",
+            "name": "form_title",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "<h2>Get in touch<\/h2>",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_61103fb39c9df",
+            "label": "Form shortcode",
+            "name": "form_shortcode",
+            "type": "text",
+            "instructions": "Add form shortcode. <br>\r\nShortcode you can find <strong><a href=\"\/wp-admin\/admin.php?page=wpcf7\" target=\"_blank\">here<\/a><\/strong>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "[contact-form-7 id=\"76\" title=\"Contact\"]",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_621e86ae9a784",
+            "label": "Add border bottom",
+            "name": "add_border_bottom",
+            "type": "true_false",
+            "instructions": "Add blue border bottom.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "30",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_621e86c09a785",
+            "label": "Center the section",
+            "name": "center_the_section",
+            "type": "true_false",
+            "instructions": "By default the section will align to the left. \r\nCheck if you want to center the section.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "30",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_629b3dba51bbf",
+            "label": "Remove fadein animation",
+            "name": "remove_fadein_animation",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/contact-form-section"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1654341091
+}

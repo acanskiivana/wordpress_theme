@@ -1,0 +1,82 @@
+.card-counter {
+    background: $background-gradiend;
+    border-radius: 10px;
+    box-shadow: $shadow;
+    padding: 7rem 2.4rem 2.4rem 2.4rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    @include respond-to('small') {
+        padding-top: 70px;
+    }
+    @extend %border-gradient;
+    @include respond-to('xlarge') {
+        border-radius: 1rem;
+    }
+
+    &-wrap {
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+        grid-column-gap: 25px;
+        grid-row-gap: 25px;
+        counter-reset: section;
+
+        @include respond-to('small') {
+            grid-template-columns: 4fr 4fr 4fr;
+            grid-auto-rows: 1fr
+        }
+
+        @include respond-to('medium') {
+            grid-column-gap: 7.5rem;
+            grid-row-gap: 7.5rem;
+        }
+    }
+
+    &__content {
+        margin-top: 1.5rem;
+    }
+
+    &:after {
+        counter-increment: section;
+        content: counter(section);
+        color: transparent;
+        font-size: 40px;
+        font-weight: 900;
+        font-family: $title-font;
+        -webkit-text-stroke: 2px $primary;
+        text-stroke: 2px $primary;        
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+
+        @include respond-to('medium') {
+            font-size: 66px;
+            line-height: 66px;
+        }
+
+        @include respond-to('xlarge') {
+            font-size: 6.6rem;
+            line-height: 6.6rem;
+        }
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 22px;
+
+        @include respond-to('small') {
+            font-size: 16px;
+            line-height: 26px;
+        }
+
+        @include respond-to('medium') {
+            font-size: 18px;
+            line-height: 28px;
+        }
+
+        @include respond-to('xlarge') {
+            font-size: 1.8rem;
+            line-height: 2.8rem;
+        }
+    }
+}

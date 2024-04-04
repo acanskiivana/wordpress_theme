@@ -1,0 +1,57 @@
+.subscribe {
+   margin-bottom: 10rem;
+   &__title {
+      margin-bottom: 4rem;
+      text-transform: uppercase;
+      @include respond-to('small') { 
+         text-align: center;
+      }
+   }
+   &__form {
+      form {
+         @include respond-to('small') {
+            display: grid;
+            grid-template-columns: 6fr 6fr 1fr;
+            grid-column-gap: 2.4rem;
+         }
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="url"],
+      input[type="password"],
+      input[type="search"],
+      input[type="number"],
+      input[type="tel"],
+      input[type="range"],
+      input[type="date"],
+      input[type="month"],
+      input[type="week"],
+      input[type="time"],
+      input[type="datetime"],
+      input[type="datetime-local"],
+      input[type="color"],
+      textarea {
+         padding:13px 2rem;
+         font-size: 18px;
+         line-height: 28px;
+      }
+      input[type=submit] {
+         margin-top: 20px;
+         background: $background-gradiend-button;
+         @include respond-to('small') { 
+            margin-top: 0;
+            font-size: 24px;
+            line-height: 30px;
+            padding: 13px;
+         }
+      }
+      .wpcf7-spinner {
+         display: block;
+         margin: 9px auto 0 auto;
+      }
+      .wpcf7 form .wpcf7-response-output {
+         margin-top: 0;
+      }
+   }
+}

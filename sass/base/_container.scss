@@ -1,0 +1,56 @@
+.container,
+%container {
+  @include push--auto();
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 570px;
+  @include respond-to('xsmall') {
+    width: 90%;
+    max-width: 100%;
+  }
+
+  @include respond-to('xlarge') {
+    max-width: 1210px;
+    width: 100%;
+  }
+
+  @include respond-to('xxlarge') {
+    max-width: 125rem;
+    width: 100%;
+  }
+}
+
+.container-right-full {
+  overflow: hidden;
+  
+  &--inner {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 570px;
+    @include push--auto();
+
+    @include respond-to('xsmall') {
+      width: 90%;
+      max-width: 100%;
+    }
+
+    @include respond-to('small') {
+      margin-left: calc(5%);
+      width: 100%;
+    }
+
+    @include respond-to('large') {
+      margin-left: 5%;
+
+    }
+
+    @include respond-to('xlarge') {
+      margin-left: calc((100% - 1210px)/2);
+    }
+
+    @include respond-to('xxlarge') {
+      margin-left: calc((100% - 125rem)/2);
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,125 @@
+/* ----------------------------- Helper classes ----------------------------- */
+
+%border-gradient {
+    background: $background-gradiend;
+    border-radius: 10px;
+    position: relative;
+
+    &:before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+        border-width: 1px;
+        border-style: solid;
+        border-color: transparent;
+        background: -o-linear-gradient(135deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.0001) 33%, rgba(67, 217, 226, 0.0001) 70.29%, rgba(0, 203, 216, 0.5) 100%) border-box;
+        /*3*/
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.0001) 33%, rgba(67, 217, 226, 0.0001) 70.29%, rgba(0, 203, 216, 0.5) 100%) border-box;
+        /*3*/
+        mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+
+        @include respond-to('xlarge') {
+            border-radius: 1rem;
+        }
+    }
+}
+
+.mt-0 {
+    margin-top: 0 !important;
+}
+
+.mb-10 {
+    margin-bottom: 10px !important;
+}
+
+.mb-15 {
+    margin-bottom: 1.5rem !important;
+}
+
+.mb-20 {
+    margin-bottom: 2rem !important;
+}
+
+.title-uppercase {
+
+    h1,
+    h2,
+    h3 {
+        text-transform: uppercase;
+
+        em {
+            text-transform: none;
+            font-style: normal;
+        }
+    }
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.unstyle-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    li {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+%arrow {
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+}
+
+%arrow--right {
+    transform: rotate(-45deg);
+}
+
+%arrow--left {
+    transform: rotate(135deg);
+}
+
+%arrow--top {
+    transform: rotate(-135deg);
+}
+
+%arrow--bottom {
+    transform: rotate(45deg);
+}
+
+.arrow {
+    @extend %arrow;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+.mt-section {
+    margin-top: 7rem;
+}
+
+.border-top-04 {
+    border-top: 1px solid rgba(0, 203, 216, .4);
+}

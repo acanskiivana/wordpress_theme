@@ -1,0 +1,100 @@
+.card-icon {
+    padding: 10px 5rem 40px 5rem;
+    margin: 30px 40px;
+    background: $background-gradiend;
+    box-shadow: $shadow;
+    border-radius: 1rem;
+    @extend %border-gradient;
+
+    @include respond-to('small') {
+        margin: 0;
+    }
+
+    @include respond-to('medium') {
+        padding: 1rem 5rem 4rem 5rem;
+    }
+
+    @include respond-to('xxlarge') {
+        padding: 3rem 5rem 5rem 5rem;
+    }
+
+    &-wrap {
+        margin-left: -20px;
+        margin-right: -20px;
+
+        @include respond-to('small') {
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr;
+            grid-column-gap: 2rem;
+        }
+
+        @include respond-to('medium') {
+            grid-column-gap: 6rem;
+        }
+
+        @include respond-to('xlarge') {
+            grid-column-gap: 7.2rem;
+        }
+
+        >div {
+            @include respond-to('small') {
+                height: 100%;
+                display: flex;
+            }
+        }
+    }
+
+    &__img {
+        @include push--auto;
+        width: 26rem;
+        height: 24rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 11px;
+
+        @include respond-to('small') {
+            width: 100%;
+            max-width: 26rem;
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            height: auto;
+            width: auto;
+        }
+    }
+
+    &__content {
+        text-align: center;
+
+        h3 {
+            @extend %size_h5;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            @extend %base;
+        }
+    }
+}
+
+.card-icon-wrap {
+    overflow: hidden;
+
+    @include respond-to('small') {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    >div {
+        margin-left: -20px;
+        margin-right: -20px;
+
+        @include respond-to('small') {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+}

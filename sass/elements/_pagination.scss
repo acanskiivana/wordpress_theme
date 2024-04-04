@@ -1,0 +1,52 @@
+// Pagination 
+// Pagination - ajax load plugin
+.pagination,
+ul.alm-paging.pagination {
+    list-style: none;
+    padding: 0;
+    margin: 9rem 0 0 0;
+    display: flex;
+    justify-content: center;
+    .num {
+        margin-left: 8px;
+        margin-right: 8px;
+        display: inline-block;
+        a {
+            border-radius: 4px!important;
+            border: none;
+            padding: 8px;
+            min-height: 4.2rem;
+            min-width: 4.2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:before {
+                border-radius: 4px!important;
+            }
+            &:hover {
+                opacity: .8;
+                transition: all .3s ease-in-out;
+            }
+        }
+        &.active,
+        &.current {
+            a {
+                background-color: transparent;
+            }
+        }
+        &:not(.active):not(.current) {
+            a {
+                box-shadow: $shadow;
+                background: $background-gradiend-button;
+                @extend %border-gradient;
+            }
+        }
+        span {
+            @include fluid-type(320px, 1439px, 16px, 24px);
+            @include line-height(320px, 1439px, 16px, 24px);
+            font-family: $title-font;
+            color: #fff;
+            font-weight: 700;
+        }
+    }
+}

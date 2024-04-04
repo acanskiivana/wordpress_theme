@@ -1,0 +1,201 @@
+// Single page 
+// Single hero 
+.single-hero {
+    margin-top: 10rem;
+    padding-top: 15rem;
+    padding-bottom: 10rem;
+    &__subtitle {
+        max-width: 600px;
+    }
+    @include respond-to('small') {
+        background-image: url(img/glowing-turbines-graphic2.png);
+        background-position: center right;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+.single-content {
+    border-radius: 2rem;
+    margin-bottom: 12rem;
+    border: 1px solid $border-color-second;
+    padding: 20px 20px 20rem 20px;
+    background-color: #fff;
+    margin-left: -20px;
+    margin-right: -20px;
+    @include respond-to('xsmall') {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 5rem 5rem 9rem;
+    }
+    @include respond-to('small') {
+        padding: 10rem 10rem 9rem;
+    }
+}
+
+.single-container {
+    max-width: 1030px;
+}
+
+.editor {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: $title-font;
+        color: $font_color_dark;
+        letter-spacing: .5px;
+        font-weight: 600;
+    }
+    h2 {
+        @include fluid-type(320px, 1439px, 26px, 40px);
+        @include line-height(320px, 1439px, 36px, 56px);
+        margin-bottom: 2.8rem;
+        margin-top: 4.5rem;
+    }
+    h3 {
+        @extend %size_h4;
+        margin-bottom: 2rem;
+        margin-top: 3.5rem;
+    }
+    h4 {
+        @extend %size_h5;
+        margin-bottom: 1.7rem;
+        margin-top: 3.5rem;
+    }
+    p {
+        margin-bottom: 3rem;
+    }
+    ol,
+    ul {
+        margin-bottom: 3rem;
+    }
+    li {
+        padding: 0;
+        margin-bottom: 1.2rem;
+        &:nth-last-of-type(1) {
+            margin-bottom: 0;
+        }
+    }
+    p,
+    li {
+        color: $font_color_dark;
+        font-weight: 500;
+    }
+    th,
+    td {
+        color: $font_color_dark;
+    }
+    a:not(.wp-block-button__link) {
+        color: $primary;
+        transition: all .3s ease-in-out;
+        position: relative;
+        display: inline-block;
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background-color: $primary;
+            transition: width .3s ease-in-out, opacity .3s ease-in-out;
+        }
+        &:hover::after,
+        &:focus::after {
+            opacity: 1;
+            width: 100%;
+            transition: width .3s ease-in-out, opacity .3s ease-in-out;
+        }
+    }
+    img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+    table,
+    td,
+    th {
+        border-color: $lihgt_grey;
+    }
+    .wp-block-image {
+        border-radius: 10px;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        figcaption {
+            margin-top: 2.5rem;
+            font-size: 14px;
+            color: $font_color_dark;
+            line-height: 1.4;
+            text-align: center;
+        }
+        &.width-auto {
+            img {
+                width: auto;
+            }
+        }
+    }
+    .wp-block-gallery {
+        .blocks-gallery-item figure {
+            border-radius: 10px;
+            overflow: hidden;
+        }
+    }
+    .wp-block-quote {
+        border-left: 4px solid $primary;
+        padding: 0 0 0 2.4rem;
+        margin: 2.4rem 0 4rem 0;
+        p {
+            @extend %base;
+            letter-spacing: .2px;
+            margin-bottom: 2rem;
+            font-style: italic;
+            color: $font_color_light;
+            &:nth-last-of-type(1) {
+                margin-bottom: 0;
+            }
+        }
+        cite {
+            color: $font_color_light;
+            font-family: $main-font;
+            letter-spacing: .16px;
+            font-size: 14px;
+            line-height: 22px;
+            font-family: italic;
+            margin-top: 16px;
+            display: inline-block;
+        }
+    }
+    .wp-block-button .wp-block-button__link {
+        @extend %size_h6;
+        background: $background-gradiend-button;
+        @extend %border-gradient;
+        font-family: $title-font;
+        font-weight: 700;
+        padding: 1.2rem 2.2rem;
+        border-radius: 10px;
+        display: inline-block;
+        transition: all .3s ease-in-out;
+        color: #fff;
+        letter-spacing: 1px;
+        &:hover {
+            transform: scale(1.03);
+            transition: all .3s ease-in-out;
+        }
+    }
+    hr,
+    hr.wp-block-separator {
+        border: none;
+        border-top: 1px solid $border-color-second;
+        padding-top: 3.125rem;
+        margin-top: 3.125rem;
+        &:not(.is-style-wide) {
+            width: 8rem;
+        }
+    }
+    .list-title {
+        margin-bottom: 1.4rem;
+    }
+}

@@ -1,0 +1,80 @@
+.counter {
+    @include respond-to('small') {
+        display: grid;
+        grid-template-columns: 4fr 8fr;
+        grid-column-gap: 3.2rem;
+    }
+}
+
+.counter-card-large {
+    margin-bottom: 25px;
+
+    @include respond-to('small') {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    &__number {
+        @include fluid-type(320px, 1439px, 50px, 110px);
+        font-weight: 900;
+        font-family: $title-font;
+      
+        @include respond-to('xxlarge') {
+            font-size: 11rem;
+        }
+    }
+}
+
+.counter-card {
+    background: $background-gradiend;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: $shadow;
+    @extend %border-gradient;
+
+    @include respond-to('small') {
+        padding: 2.4rem;
+    }
+
+    @include respond-to('medium') {
+        padding-top: 5.8rem;
+        justify-content: flex-end;
+    }
+
+    &-wrap {
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+
+        @include respond-to('medium') {
+            grid-column-gap: 7.2rem;
+            grid-row-gap: 7.2rem;
+        }
+    }
+
+    &__number {
+        @include fluid-type(320px, 1439px, 26px, 46px);
+        font-family: $title-font;
+        font-weight: 900;
+        margin-bottom: 10px;
+        display: inline-block;
+        @include respond-to('xxlarge') {
+           margin-bottom: 1rem;
+           font-size: 4.6rem;
+        }
+    }
+
+    p {
+        @include fluid-type(320px, 1439px, 14px, 18px);
+        @include line-height(320px, 1439px, 18px, 30px);
+        @include respond-to('xxlarge') {
+            font-size: 1.8rem;
+            line-height: 3rem;
+         }
+    }
+}

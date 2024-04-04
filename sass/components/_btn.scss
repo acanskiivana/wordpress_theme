@@ -1,0 +1,54 @@
+%btn {
+    @include fluid-type(320px, 1439px, 18px, 24px);
+    @include line-height(320px, 1439px, 28px, 36px);
+    box-shadow: $shadow;
+    background: $background-gradiend-button;
+    @extend %border-gradient;
+    font-family: $title-font;
+    font-weight: 700;
+    padding: 1.6rem 2.8rem;
+    border-radius: 10px;
+    display: inline-block;
+    transition: all .3s ease-in-out;
+    color: #fff;
+    letter-spacing: 1px;
+
+    @include respond-to('xlarge') {
+        padding: 16px 28px;
+        // border-radius: 1rem;
+        // font-size: 2.4rem;
+        // line-height: 3.6rem;
+    }
+
+    &:hover {
+        transform: scale(1.03);
+        transition: all .3s ease-in-out;
+    }
+}
+
+textarea {
+    height: 30rem
+}
+
+.btn {
+    @extend %btn;
+
+    &--medium-mt {
+        margin-top: 6rem;
+    }
+
+    &--large-mt {
+        margin-top: 9rem;
+    }
+}
+
+.btn-center {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    color: inherit;
+}

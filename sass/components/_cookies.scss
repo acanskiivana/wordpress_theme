@@ -1,0 +1,92 @@
+div#cookie-notice {
+    #cn-notice-text {
+        font-family: $main-font;
+        font-size: 14px;
+        line-height: 22px;
+        max-width: 850px;
+        @include respond-to('small') {
+            text-align: left;
+            font-size: 16px;
+            line-height: 26px;
+        }
+        
+        a {
+            border-bottom: 1px solid rgba(255, 255, 255, .5);
+            &:hover {
+                border-color: $primary;
+               transition: all .3s ease-in-out;
+           }
+        }
+    }
+    .cookie-notice-container {
+        border: $background-gradiend;
+        padding: 15px 20px;
+        max-width: 570px;
+        @include push--auto;
+        @include respond-to('small') {
+          width: 90%;
+          max-width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+        }
+      
+        @include respond-to('xlarge') {
+          max-width: 1210px;
+          width: 100%;
+        }
+      
+        @include respond-to('xxlarge') {
+          max-width: 125rem;
+          width: 100%;
+        }
+    }
+
+    #cn-close-notice {
+        top: 15px;
+        right: 10px;
+        display: none;
+    }
+
+    #cn-notice-buttons {
+        margin-top: 15px;
+       
+        @include respond-to('small') {
+            margin-top: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-left: 60px;
+        }
+        .cn-set-cookie {
+            @extend %btn;
+            font-size: 14px;
+            line-height: 16px;
+            padding: 1.4rem 17px!important;
+            width: 120px;
+            @include respond-to('small') {
+                margin-left: 0;
+            }
+        }
+
+        .cn-more-info {
+            background-color: transparent;
+            font-size: 14px;
+            border: none;
+            border-bottom: 1px solid rgba(255, 255, 255, .5);
+            font-family: $title-font;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-radius: 0;
+            @include respond-to('small') {
+                margin-left: 0;
+            }
+            &:hover {
+                 border-color: $primary;
+                transition: all .3s ease-in-out;
+            }
+        }
+    }
+}

@@ -1,0 +1,57 @@
+html {
+    font-size: 38%;
+    -webkit-text-size-adjust:none;
+    background: $secondary;
+    font-style: normal;
+
+    @include respond-to('medium') {
+        font-size: 40%;
+    }
+
+    @include respond-to('large') {
+        font-size: 58.25%;
+    }
+
+    @include respond-to('xlarge') {
+        font-size: 62.25%;
+    }
+
+    @include respond-to('xxlarge') {
+        font-size: 68%;
+    }
+}
+
+body {
+    overscroll-behavior-y: none;
+    background: url(img/background.png), linear-gradient($secondary, $secondary);
+    background-repeat: repeat;
+    background-size: 100%;
+    font-style: normal;
+    background-position: top center;
+    color: $white;
+    font-family: $main-font;
+    font-weight: 400;
+    letter-spacing: .2px;
+    padding: 0;
+    margin: 0;
+}
+
+.section-large-mb {
+    margin-bottom: 17rem;
+
+    @include respond-to('large') {
+        margin-bottom: 22rem;
+    }
+}
+
+.section-medium-mb {
+    margin-bottom: 10rem;
+}
+
+.section-small-mb {
+    margin-bottom: 7rem;
+}
+
+.grecaptcha-badge {
+    display: none;
+}

@@ -1,0 +1,503 @@
+/* Landing Page CSS
+   ========================================================================== */
+
+
+/* Paddword Form CSS */
+
+.page-id-1424 form.post-password-form {
+    max-width: 780px;
+    padding: 0px 30px;
+    display: block;
+    margin: 200px auto 100px auto;
+}
+
+.page-id-1424 form.post-password-form input[type="submit"] {
+    margin-top: 30px;
+}
+
+.page-id-1424 form.post-password-form input[type="password"] {
+    max-width: 400px;
+    display: block;
+}
+
+span.landing-hero-text-h {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 43px;
+    letter-spacing: -0.019em;
+    display: inline-block;
+    font-family: 'Poppins';
+}
+
+p.landing-hero-text-h {
+    font-size: 24px;
+    line-height: 43px;
+    letter-spacing: -0.019em;
+    display: inline-block;
+    font-family: 'Poppins';
+}
+
+h4.landing-hero-right-p {
+    color: #A5C543;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    display: inline-block;
+}
+
+.landing-specialist-row table td code a kbd {
+    font-family: 'Poppins';
+    background-color: #fff;
+    color: #000;
+    font-size: 16px;
+    padding: 4px 10px;
+    box-shadow: 1px 2px 4px rgba(70, 198, 211, 1);
+    margin-top: 10px;
+    display: inline-block;
+    line-height: normal;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+}
+
+.landing-specialist-row table td code a kbd:hover {
+    box-shadow: 2px 3px 5px rgb(70, 198, 211);
+    transition: 1.5s;
+}
+
+.landing-video-section {
+    gap: 50px;
+    background: linear-gradient(109.46deg, rgba(201, 201, 201, 0.8) 1.57%, rgba(196, 196, 196, 0.1) 100%);
+    background: linear-gradient(135deg, #ffffff33 0%, #ffffff0a 100%);
+    backdrop-filter: blur(30px);
+    border-radius: 28px;
+    padding: 25px;
+}
+
+.landing-video-section.left-text-space {
+    gap: 80px;
+}
+
+.landing-specialist-row table {
+    border: none;
+}
+
+.landing-specialist-row table td {
+    border: none;
+    padding: 0px;
+    position: relative;
+    transition: all 0.45s ease;
+}
+
+.landing-specialist-row table tr {
+    display: flex;
+    gap: 45px;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing-specialist-row table td img {
+    box-shadow: 1px 10px 40px 0px rgba(0, 0, 0, 0.65);
+    display: inline-block;
+    margin: 0px;
+    position: relative;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.landing-specialist-row table td code {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    visibility: hidden;
+    font-family: 'Poppins';
+    letter-spacing: -0.022em;
+    font-size: 22px;
+    color: #fff;
+}
+
+.landing-specialist-row table td code strong {
+    font-weight: 700;
+    font-size: 28px;
+    color: rgba(70, 198, 211, 1);
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.landing-specialist-row table td:hover code {
+    visibility: visible;
+    z-index: 99;
+    transition: all 0.8s ease;
+}
+
+.landing-specialist-row table td code a {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Poppins';
+    letter-spacing: -0.022em;
+    color: #FFFFFF;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.landing-specialist-row table td:hover:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 8px);
+    top: 0;
+    left: 0px;
+    z-index: 9;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.video-center-icon .music_icon.video_icon {
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%);
+    background: transparent !important;
+    background-image: url('/wp-content/uploads/2023/01/video-play-icon.png') !important;
+    height: 86.67px !important;
+    width: 86.67px !important;
+    z-index: 9;
+}
+
+.landing-about-slider ul.slick-dots li button {
+    width: 12px;
+    height: 12px;
+    background: #D9D9D9;
+    padding: 0px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.landing-about-slider ul.slick-dots li.slick-active button {
+    width: 20px;
+    height: 20px;
+    background: #46C6D3;
+}
+
+.slick-dots li.slick-active button:before,
+.landing-about-slider .slick-dots li button::before {
+    color: transparent;
+}
+
+.landing-about-slider ul.slick-dots li {
+    text-align: center;
+}
+
+.landing-about-slider ul.slick-dots {
+    bottom: -75px;
+}
+
+.landing-about-slider h4 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: -0.022em;
+}
+
+.landing-about-slider p {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.022em;
+    color: #FFFFFF;
+}
+
+.landing-customer-say .wp-block-columns .wp-block-column {
+    background: linear-gradient(109.46deg, rgba(201, 201, 201, 0.8) 1.57%, rgba(196, 196, 196, 0.1) 100%);
+    background: linear-gradient(135deg, #ffffff33 0%, #ffffff0a 100%);
+    box-shadow: 1px 10px 40px rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(30px);
+    border-radius: 28px;
+}
+
+.landing-customer-say .wp-block-columns .wp-block-column strong {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: -0.022em;
+    color: #46C6D3;
+    display: block;
+    text-align: left;
+}
+
+.landing-customer-say .wp-block-columns .wp-block-column p {
+    letter-spacing: -0.022em;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    margin-bottom: 90px;
+    margin-top: 90px;
+}
+
+.landing-customer-say .wp-block-columns .wp-block-column cite {
+    position: absolute;
+    width: 100%;
+    left: 40px;
+    bottom: 0px;
+    padding-bottom: 15px;
+}
+
+.landing-customer-say .wp-block-image {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #edf2f4;
+    z-index: 99;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+span.landing-video-text {
+    font-size: 24px;
+    line-height: 43px;
+    letter-spacing: -0.019em;
+    display: inline-block;
+    font-family: 'Poppins';
+}
+
+span.landing-video-text b {
+    font-weight: 700;
+    letter-spacing: -0.019em;
+    margin-bottom: 5px;
+    display: inline-block;
+    font-size: 30px;
+}
+
+.landing-two-logo-section .wp-block-columns {
+    justify-content: center;
+    margin: 0;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.landing-two-logo-section .wp-block-columns.wp-container-7 {
+    gap: 250px;
+}
+
+.landing-two-logo-section .wp-block-columns.wp-container-7 .wp-block-column:first-child .wp-block-image .aligncenter {
+    margin-right: 0px;
+}
+
+.landing-two-logo-section .wp-block-columns.wp-container-7 .wp-block-column:last-child .wp-block-image .aligncenter {
+    margin-left: 0px;
+}
+
+.wp-block-lbb-lightbox .lbbLightBox .lbbContent_area img {
+    border-radius: 20px;
+}
+
+.wp-block-lbb-lightbox .lbbLightBox .lbbContent_area {
+    background: transparent;
+}
+
+.wp-block-lbb-lightbox .lbbLightBox .lbbContent_area img {
+    border-radius: 20px;
+}
+
+.wp-block-lbb-lightbox .lbbLightBox .lbbContent_area {
+    background: transparent;
+}
+
+.wp-block-lbb-lightbox .lbbLightBox a:after {
+    content: '';
+    width: 100%;
+    height: calc(100% - (2px));
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.46);
+    border-radius: 20px;
+}
+
+.wp-block-lbb-lightbox .lbbLightBox a {
+    position: relative;
+    display: inline-block;
+}
+
+.wp-block-table.landing-download-row td a {
+    font-size: 24px;
+    line-height: 43px;
+    color: #fff;
+    font-family: 'Poppins';
+}
+
+.landing-download-row .wp-block-column {
+    text-align: center;
+    background: linear-gradient(135deg, #ffffff33 0%, #ffffff0a 100%);
+    box-shadow: 1px 10px 40px rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(30px);
+    border-radius: 28px;
+    height: 250px;
+    width: 284px;
+    border-width: 2px;
+    border: rgba(70, 198, 211, 1);
+    border-style: solid;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    padding: 0px 10px;
+    font-weight: 600;
+}
+
+.landing-download-row .wp-block-column a {
+    font-size: 28px;
+    line-height: 40px;
+    color: #fff;
+    font-family: 'Poppins';
+}
+
+h1.landing-page-heading {
+    font-size: 70px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.landing-video-column {
+    position: relative;
+}
+
+.landing-video-column h4.video-bottom-text {
+    margin: 0px;
+    position: absolute;
+    bottom: 20px;
+    font-size: 36px;
+    align-items: center;
+    letter-spacing: -0.019em;
+    font-weight: 600;
+    line-height: normal;
+    left: 20px;
+}
+
+.landing-video-column h4.video-bottom-text span {
+    font-size: 24px;
+    font-weight: 400;
+    display: block;
+}
+
+.landing-video-column h4.video-bottom-text.right-side {
+    left: unset;
+    right: 20px;
+    text-align: right;
+}
+
+@media only screen and (max-width: 1200px) {
+    h1.landing-page-heading {
+        font-size: 50px;
+    }
+    span.landing-video-text {
+        font-size: 20px;
+    }
+    .landing-customer-say .wp-block-columns .wp-block-column strong {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    h4.landing-hero-right-p {
+        font-size: 24px;
+    }
+    h1.landing-page-heading {
+        font-size: 35px;
+        line-height: normal;
+    }
+    span.landing-video-text {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    span.landing-video-text b {
+        font-size: 25px;
+    }
+    .landing-customer-say .wp-block-columns .wp-block-column blockquote {
+        margin: 0px;
+        text-align: center;
+        display: inline-block;
+    }
+    .landing-customer-say .wp-block-columns .wp-block-column p {
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+    .wp-block-column.container.landing-customer-say {
+        padding: 0px;
+    }
+    .landing-customer-say .wp-block-columns .wp-block-column cite {
+        position: unset;
+    }
+    .landing-customer-say .wp-block-image {
+        position: unset;
+        transform: unset;
+        margin-bottom: 20px;
+    }
+    .landing-customer-say .wp-block-image img {
+        max-width: 200px;
+    }
+    .landing-customer-say .wp-block-columns .wp-block-column strong {
+        text-align: center;
+        margin: 10px 0px;
+    }
+    .landing-customer-say .wp-block-columns .wp-block-column {
+        padding: 10px 15px 20px 15px;
+        margin-bottom: 30px;
+    }
+    .landing-video-section {
+        padding: 25px 15px;
+    }
+    .landing-video-section.left-text-space {
+        gap: 30px;
+    }
+    .landing-two-logo-section .wp-block-columns {
+        padding: 20px 0px;
+        gap: 40px;
+    }
+    .landing-specialist-row table tr {
+        flex-direction: column;
+        gap: 20px;
+    }
+    h1.landing-page-heading br {
+        display: none;
+    }
+    span.landing-hero-text-h {
+        font-size: 24px;
+        line-height: 36px;
+    }
+    p.landing-hero-text-h {
+        font-size: 18px;
+        line-height: 33px;
+        margin-top: 10px;
+    }
+    .landing-video-column h4.video-bottom-text {
+        font-size: 16px;
+    }
+    .landing-video-column h4.video-bottom-text span {
+        font-size: 14px;
+    }
+    .video-center-icon .music_icon.video_icon {
+        height: 56.67px !important;
+        width: 56.67px !important;
+    }
+    .wp-block-lbb-lightbox .lbbLightBox .lbbContent_area .music_icon.video_icon {
+        background-size: 100% !important;
+    }
+    .landing-specialist-row table td:hover:before {
+        height: calc(100% - 5px);
+    }
+    .landing-about-slider h4 {
+        font-size: 20px;
+    }
+    .wp-block-lbb-lightbox .lbbLightBox a:after {
+        height: calc(100% - (1px));
+    }
+}

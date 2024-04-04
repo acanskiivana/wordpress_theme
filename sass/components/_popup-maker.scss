@@ -1,0 +1,99 @@
+#popupmaker-custom {
+    .pum-container {
+        max-width: 440px;
+        width: 90%;
+        border-radius: 10px;
+        @extend %border-gradient;
+        box-shadow: 0px 10px 40px -5px rgba(0, 0, 0, 0.5);
+        opacity: 1;
+        background-image: linear-gradient(90deg, rgba(57, 60, 67, 1) 0%, rgba(22, 31, 40, 1) 100%);
+        padding: 30px;
+    }
+
+    .popmake-title {
+        color: #fff;
+        @include fluid-type(320px, 1439px, 22px, 24px);
+        @include line-height(320px, 1439px, 24px, 30px);
+        margin-bottom: 18px;
+        font-weight: 600;
+        letter-spacing: 0.27px;
+        line-height: 30px;
+        font-family: $title-font;
+        text-align: center;
+    }
+
+    .popmake-content {
+        text-align: center;
+
+        p {
+            @include fluid-type(320px, 1439px, 16px, 18px);
+            @include line-height(320px, 1439px, 24px, 30px);
+            letter-spacing: 0.2px;
+            line-height: 30px;
+            font-weight: 400;
+            margin-bottom: 20px;
+            color: #fff;
+            opacity: 0.89;
+        }
+    }
+
+    .popup-btn-wrap {
+        display: flex;
+        justify-content: center;
+    }
+
+    .popup-btn {
+        font-size: 14px;
+        box-shadow: $shadow;
+        background: $background-gradiend-button;
+        @extend %border-gradient;
+        font-family: $title-font;
+        font-weight: 700;
+        padding: 12px 22px;
+        border-radius: 10px;
+        display: inline-block;
+        transition: all .3s ease-in-out;
+        color: #fff;
+        letter-spacing: 0.60px;
+
+        &:hover {
+            transform: scale(1.03);
+            transition: all .3s ease-in-out;
+        }
+    }
+
+    .popmake-close {
+        color: #fff;
+        font-size: 30px;
+        font-weight: 200;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 19px;
+        border-radius: 10px;
+        box-shadow: 0px 10px 40px -5px rgba(0, 0, 0, 0.5);
+        opacity: 1;
+        background-image: linear-gradient(135deg, rgba(11, 121, 136, 1) 0%, rgba(21, 69, 86, 1) 100%);
+        @extend %border-gradient;
+        width: 34px;
+        height: 34px;
+        display: inline-block;
+        position: absolute;
+        top: -16px;
+        right: -16px;
+        left: initial;
+        border-radius: 50%;
+        box-shadow: $shadow;
+
+        &::before {
+            border-radius: 50%;
+        }
+    }
+
+    .popmaker-overlay {
+        opacity: 0.5;
+        background-color: rgba(0, 0, 0, 1);
+    }
+
+
+}

@@ -1,0 +1,103 @@
+.video-section {
+    &__wrap {
+        padding-bottom: 56.25%;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        transform: translate3d(0, 0, 0);
+        @include respond-to('small') {
+            border-radius: 33px;
+        }
+    }
+    &__overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        z-index: 1;
+        cursor: pointer;
+        border-radius: 10px;
+        @include respond-to('small') {
+            border-radius: 33px;
+        }
+        &.play {
+            cursor: initial;
+            z-index: -2;
+        }
+    }
+    &__text {
+        position: absolute;
+        bottom: 5.2rem;
+        left: 5.2rem;
+        right: 5.2rem;
+        display: none;
+        @include respond-to('medium') {
+            display: block;
+        }
+        h2 {
+            margin-bottom: 1.6rem;
+            @extend %size_h3;
+            text-transform: initial;
+        }
+        &-mob {
+            h2 {
+                margin-bottom: 1.5rem;
+                margin-top: 2.5rem;
+                @extend %size_h4;
+                line-height: 1.6;
+                text-transform: initial;
+            }
+            @include respond-to('medium') {
+                display: none;
+            }
+        }
+    }
+    &__icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 11rem;
+        @include respond-to('small') {
+            width: 16.6rem;
+        }
+    }
+    &__poster {
+        img {
+            position: absolute;
+            top: 50%;
+            bottom: 50%;
+            left: 50%;
+            right: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__video {
+        position: absolute;
+        top: 50%;
+        bottom: 50%;
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        border-radius: 10px;
+        @include respond-to('small') {
+            border-radius: 33px;
+        }
+    }
+    &__in-post {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 0;
+    }
+}

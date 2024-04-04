@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="140px" height="140px" viewBox="0 0 140 140" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Performance Icon</title>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Product---Step-5-(all-products)" transform="translate(-267.000000, -1290.000000)">
+            <g id="Group-8-Copy" transform="translate(235.000000, 1258.000000)">
+                <g id="Performance-Icon" transform="translate(32.000000, 32.000000)">
+                    <rect id="Rectangle-Copy" stroke="#00CBD8" stroke-width="3.73333333" x="1.86666667" y="1.86666667" width="136.266667" height="136.266667"></rect>
+                    <circle id="Oval-Copy" stroke="#00C8D5" stroke-width="1.86666667" cx="70.4666667" cy="68.6" r="41.5333333"></circle>
+                    <circle id="Oval-Copy-2" stroke="#00C8D5" stroke-width="1.86666667" cx="70.4666667" cy="68.6" r="34.0666667"></circle>
+                    <path d="M85.9990962,45.1368248 C81.6288708,41.9881782 76.2643799,40.1333333 70.4666667,40.1333333 C63.9908925,40.1333333 58.0555996,42.4474089 53.4425981,46.29375" id="Oval-Copy-3" stroke="#00C8D5" stroke-width="1.86666667" stroke-linecap="round"></path>
+                    <path d="M117.12362,102.656953 C118.154551,102.656953 119.087884,103.07482 119.763485,103.750421 C120.439085,104.426021 120.856953,105.359355 120.856953,106.390286 C120.856953,107.421218 120.439085,108.354551 119.763485,109.030152 C119.087884,109.705752 118.154551,110.12362 117.12362,110.12362 L96.5902862,110.12362 L96.5902862,102.656953 Z" id="Rectangle-Copy-2" stroke="#00C8D5" stroke-width="1.86666667" transform="translate(108.723620, 106.390286) rotate(-315.000000) translate(-108.723620, -106.390286) "></path>
+                    <polyline id="Path-2-Copy" stroke="#00C8D5" stroke-width="1.86666667" stroke-linecap="round" points="51.3333333 56.9333333 51.3333333 81.2 91.4666667 81.2"></polyline>
+                    <path d="M51.3333333,81.2 C56.9333333,79.9555556 60.9777778,77.4666667 63.4666667,73.7333333 C67.2,68.1333333 70.9333333,63.4666667 77.4666667,63.4666667 C81.8222222,63.4666667 86.4888889,63.4666667 91.4666667,63.4666667" id="Path-3-Copy" stroke="#00C8D5" stroke-width="1.86666667"></path>
+                    <line x1="51.3333333" y1="59.7333333" x2="53.2" y2="59.7333333" id="Path-4-Copy-4" stroke="#00C8D5" stroke-width="1.86666667" stroke-linecap="round"></line>
+                    <line x1="51.3333333" y1="67.2" x2="53.2" y2="67.2" id="Path-4-Copy-5" stroke="#00C8D5" stroke-width="1.86666667" stroke-linecap="round"></line>
+                    <line x1="51.3333333" y1="74.6666667" x2="53.2" y2="74.6666667" id="Path-4-Copy-6" stroke="#00C8D5" stroke-width="1.86666667" stroke-linecap="round"></line>
+                    <line x1="63.4666667" y1="80.2666667" x2="65.3333333" y2="80.2666667" id="Path-4-Copy-7" stroke="#00C8D5" stroke-width="1.86666667" stroke-linecap="round" transform="translate(64.400000, 80.266667) rotate(-90.000000) translate(-64.400000, -80.266667) "></line>
+                    <line x1="70.9333333" y1="80.2666667" x2="72.8" y2="80.2666667" id="Path-4-Copy-8" stroke="#00C8D5" stroke-width="1.86666667" stroke-linecap="round" transform="translate(71.866667, 80.266667) rotate(-90.000000) translate(-71.866667, -80.266667) "></line>
+                    <line x1="78.4" y1="80.2666667" x2="80.2666667" y2="80.2666667" id="Path-4-Copy-9" stroke="#00C8D5" stroke-width="1.86666667" stroke-linecap="round" transform="translate(79.333333, 80.266667) rotate(-90.000000) translate(-79.333333, -80.266667) "></line>
+                    <line x1="85.8666667" y1="80.2666667" x2="87.7333333" y2="80.2666667" id="Path-4-Copy-10" stroke="#00C8D5" stroke-width="1.86666667" stroke-linecap="round" transform="translate(86.800000, 80.266667) rotate(-90.000000) translate(-86.800000, -80.266667) "></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

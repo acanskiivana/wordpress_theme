@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="140px" height="140px" viewBox="0 0 140 140" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Delta Icon</title>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Product---Step-5-(all-products)" transform="translate(-267.000000, -1526.000000)">
+            <g id="Group-8-Copy-2" transform="translate(235.000000, 1494.000000)">
+                <g id="Delta-Icon" transform="translate(32.000000, 32.000000)">
+                    <rect id="Rectangle" stroke="#00CBD8" stroke-width="3.73333333" x="1.86666667" y="1.86666667" width="136.266667" height="136.266667"></rect>
+                    <g id="Group-11" transform="translate(26.133333, 26.133333)" fill="#00CBD8" fill-rule="nonzero">
+                        <path d="M37.7253333,10.8613867 L61.912,53.6103867 L59.767,53.6103867 L37.7253333,14.6514667 L35.64,18.3373867 L35.6346667,18.3280533 L2.135,77.5383867 L0,77.53872 L37.7253333,10.8613867 Z" id="Combined-Shape"></path>
+                        <path d="M43.8666667,0 L81.592,66.6773333 L31.6124061,66.677 L32.6684061,64.81 L78.3916,64.8106667 L43.8666667,3.78933333 L42.7933333,1.897 L43.8666667,0 Z" id="Combined-Shape"></path>
+                        <path d="M36.3376667,35.0233658 L37.4096667,36.9183658 L15.4830667,75.6718667 L86.6766667,75.6713867 L87.7333333,77.53872 L12.2826667,77.53872 L36.3376667,35.0233658 Z" id="Combined-Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

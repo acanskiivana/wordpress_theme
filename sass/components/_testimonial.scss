@@ -1,0 +1,247 @@
+.slick-arrow {
+    z-index: 2;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 0;
+    border: none;
+    position: absolute;
+    bottom: 0;
+    top: auto;
+    transition: transform .3s ease-in-out;
+    cursor: pointer;
+    padding: 0;
+    box-shadow: $shadow;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    @extend %border-gradient;
+    &:hover {
+        background-size: contain;
+        @include respond-to('medium') {
+            transform: scale(1.03) translateY(-50%) !important;
+            transition: transform .3s ease-in-out;
+        }
+    }
+    &:before {
+        border-radius: 50%;
+    }
+    @include respond-to('small') {
+        width: 55px;
+        height: 55px;
+    }
+    @include respond-to('medium') {
+        width: 60px;
+        height: 60px;
+    }
+    @include respond-to('xlarge') {
+        width: 6rem;
+        height: 6rem;
+    }
+    &.slick-prev {
+        background-image: url(img/slick-arrow-prev.png), linear-gradient(135deg, #00E7EE 0%, #0B7988 0%, #154556 100%);
+    }
+    &.slick-next {
+        background-image: url(img/slick-arrow-next.png), linear-gradient(135deg, #00E7EE 0%, #0B7988 0%, #154556 100%);
+    }
+}
+
+.slick-slider {
+    padding-bottom: 45px;
+    @include respond-to('small') {
+        padding-bottom: 0;
+    }
+}
+
+.slick-mobile {
+    padding-bottom: 45px;
+    .slick-prev {
+        left: calc(50% - 50px) !important;
+    }
+    .slick-next {
+        right: calc(50% - 50px) !important;
+    }
+}
+
+.slick-slider-center {
+    .slick-slide {
+        @include respond-to('small') {
+            opacity: .3;
+            transform: scale(0.9);
+            transition: transform .5s ease-in-out, opacity .5s ease-in-out;
+        }
+        &.slick-center {
+            @include respond-to('small') {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    }
+    .slick-track {
+        display: flex;
+    }
+    .slick-slide {
+        height: auto;
+        display: flex !important;
+    }
+    .slick-arrow {
+        @include respond-to('small') {
+            bottom: 50%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    .slick-prev {
+        left: calc(50% - 55px) !important;
+        @include respond-to('small') {
+            left: calc(18rem - 60px - 2%) !important;
+        }
+        @include respond-to('medium') {
+            left: calc(18vw - 60px - 2%) !important;
+        }
+        @include respond-to('large') {
+            left: calc(20vw - 60px - 2%) !important;
+        }
+        @include respond-to('xlarge') {
+            left: calc(22vw - 60px - 2%) !important;
+        }
+        @include respond-to('xxlarge') {
+            left: calc(25vw - 6rem - 2%) !important;
+        }
+        @include respond-to('huge') {
+            left: calc(28vw - 6rem - 2%) !important;
+        }
+    }
+    .slick-next {
+        right: calc(50% - 55px) !important;
+        @include respond-to('small') {
+            right: calc(18rem - 60px - 2%) !important;
+        }
+        @include respond-to('medium') {
+            right: calc(18vw - 60px - 2%) !important;
+        }
+        @include respond-to('large') {
+            right: calc(20vw - 60px - 2%) !important;
+        }
+        @include respond-to('xlarge') {
+            right: calc(22vw - 60px - 2%) !important;
+        }
+        @include respond-to('xxlarge') {
+            right: calc(25vw - 6rem - 2%) !important;
+        }
+        @include respond-to('huge') {
+            right: calc(28vw - 6rem - 2%) !important;
+        }
+    }
+}
+
+.testimonial {
+    background: $background-gradiend;
+    border-radius: 10px;
+    box-shadow: $shadow-small;
+    padding: 20px;
+    margin: 4.5rem 40px;
+    @extend %border-gradient;
+    &:before {
+        border: 2px solid;
+        border-image-source: linear-gradient(135deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.0001) 33%, rgba(67, 217, 226, 0.0001) 70.29%, rgba(0, 203, 216, 0.5) 100%);
+    }
+    display: flex;
+    flex-direction: column;
+    @include respond-to('small') {
+        box-shadow: $shadow;
+        padding: 4rem;
+        margin: 25px 25px 40px;
+    }
+    @include respond-to('xlarge') {
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+    }
+    blockquote {
+        @extend %size_h6;
+        padding: 0;
+        margin: 0 0 30px 0;
+        position: relative;
+        z-index: 1;
+        @include respond-to('medium') {
+            margin-bottom: 10rem;
+        }
+        a {
+            text-decoration: underline;
+        }
+    }
+    &__footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-top: auto;
+    }
+    &__author {
+        margin-right: 20px;
+        h6 {
+            font-weight: 900;
+            margin-bottom: 4px;
+        }
+        p {
+            font-size: 14px;
+            line-height: 20px;
+            @include respond-to('small') {
+                font-size: 16px;
+                line-height: 24px;
+            }
+            @include respond-to('xlarge') {
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+            }
+        }
+    }
+    &__logo {
+        width: 16rem;
+        height: 60px;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        @include respond-to('small') {
+            width: 160px;
+        }
+        @include respond-to('xxlarge') {
+            width: 16rem;
+        }
+    }
+    &--large {
+        background: $background-gradiend-blue;
+        max-width: 940px;
+        @include push--auto;
+        @include respond-to('small') {
+            padding: 4rem;
+        }
+        blockquote {
+            margin-bottom: 4.5rem;
+        }
+    }
+    &--section-large {
+        padding-top: 5rem;
+        padding-bottom: 15rem;
+        background: linear-gradient(180deg, #16283A 0%, rgba(21, 40, 58, 0) 100%);
+        @include respond-to('medium') {
+            padding-top: 8rem;
+        }
+    }
+}
+
+.testimonial-section {
+    overflow: hidden;
+    .slick-slider-center {
+        margin-left: -20px;
+        margin-right: -20px;
+        @include respond-to('xsmall') {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+}
+
+.testimonial-section-title {
+    margin-bottom: calc(10rem - 25px);
+}

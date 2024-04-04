@@ -1,0 +1,27 @@
+.ajax-load-more-wrap.loading .alm-paging-wrap,
+.alm-reveal.loading .alm-paging-content {
+    background-color: transparent!important;
+    background-image: none!important;
+    opacity: 1!important;
+    position: relative;
+    &:before {
+        content: "";
+        display: inline-block;
+        width: 4rem;
+        height: 4rem;
+        border: 4px solid rgba(255, 255, 255, 0.08);
+        border-radius: 50%;
+        border-top: 4px solid rgba(0, 200, 214, .5);
+        animation: spin 2s linear infinite;
+        @include push--auto;
+        margin-top: 2rem;
+        position: absolute;
+        left: 50%;
+        right: 50%;
+    }
+}
+       
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

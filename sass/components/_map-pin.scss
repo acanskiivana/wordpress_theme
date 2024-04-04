@@ -1,0 +1,67 @@
+.map {
+    background-image: url(img/map.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+   
+    &__wrap {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+    }
+
+    svg {
+        height: 300px;
+        @include respond-to('small') {
+            height: auto;
+        }
+    }
+}
+
+.map-pin {
+    cursor: pointer;
+    #tooltip {
+        opacity: 0;
+        z-index: -99;
+        transition: all .3s ease-in-out;
+        #quote-bg {
+            use {
+                fill: $background-gradiend;
+                fill-opacity: 1;
+            }
+        }
+    }
+    &.map-pin--active {
+        >#tooltip {
+            opacity: 1;
+            z-index: 1;
+            transition: all .3s ease-in-out;
+        }
+    }
+  
+    circle {
+        animation-duration: 2s;
+        animation-name: pulse;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        fill-opacity: 1;
+        stroke-opacity: 1;
+    }
+
+    50% {
+        fill-opacity: .7;
+        stroke-opacity: .7;
+    }
+
+    100% {
+        fill-opacity: 1;
+        stroke-opacity: 1;
+    }
+}
+

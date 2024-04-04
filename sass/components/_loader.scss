@@ -1,0 +1,61 @@
+.js-filter .loader {
+    visibility: hidden;
+}
+
+.js-filter.loading .loader {
+    visibility: visible;
+}
+
+.loader {
+    width: 4rem;
+    height: 4rem;
+    border: 4px solid rgba(255, 255, 255, 0.08);
+    border-radius: 50%;
+    border-top: 4px solid rgba(0, 200, 214, .5);
+    animation: spin 2s linear infinite;
+    @include push--auto;
+    margin-top: 2rem;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+// filter loader
+.response-wrap {
+    position: relative;
+    margin-bottom: 17rem;
+}
+
+#response {
+    min-height: 400px;
+}
+
+.load {
+    position: absolute;
+    z-index: 998;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    background-color: transparent;
+    &__icon {
+        position: absolute;
+        z-index: 999;
+        left: 50%;
+        margin-left: -2rem;
+        top: 15rem;
+        border: 4px solid rgba(255, 255, 255, 0.08);
+        border-radius: 50%;
+        border-top: 4px solid rgba(0, 200, 214, .5);
+        width: 4rem;
+        height: 4rem;
+        animation: spin 2s linear infinite;
+    }
+}
